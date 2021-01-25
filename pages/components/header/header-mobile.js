@@ -1,13 +1,13 @@
+import { useState } from "react";
 import Logo from "../logo";
 import OpenDrawerButton from "./open-drawer-botton";
 import SideDrawer from "./side-drawer";
 
 export default function HeaderMobile({viewer}) {
-    let isDrawerOpen = false
+    const [isDrawerOpen, setToggleDrawerOpen] = useState(false)
 
     const togleDrawer = () => {
-        console.log('isDrawerOpen: ', isDrawerOpen)
-        isDrawerOpen = !isDrawerOpen
+        setToggleDrawerOpen(!isDrawerOpen)
     }
 
     return (
@@ -17,9 +17,6 @@ export default function HeaderMobile({viewer}) {
             <SideDrawer closeDrawer={togleDrawer} isOpen={isDrawerOpen} />
 
             <Logo />
-            <div>
-                <h1> iS: {isDrawerOpen}</h1>
-            </div>
 
             <style jsx>{`
                 .header-mobile {

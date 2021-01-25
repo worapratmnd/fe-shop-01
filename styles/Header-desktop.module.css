@@ -1,0 +1,98 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 10vw;
+}
+.navButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navButtons a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  color: #808080;
+}
+.navButtons .itemsTotal {
+  font-size: 12px;
+  align-self: flex-end;
+}
+.navButtons .navButtonsSignout {
+  margin-left: 12px;
+}
+.navButtons a:hover {
+  text-decoration: underline;
+}
+.navButtons a p {
+  margin-left: 8px;
+}
+/* Header Bottom */
+.headerBottom {
+  padding: 0px 10vw;
+  border-top: 2px solid #f5f5f5;
+}
+.headerBottom .allCategoriesBox {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* Border */
+  border-right: 2px solid #f5f5f5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 48px;
+}
+.headerBottom .allCategoriesBox select {
+  height: 100%;
+  padding-left: 15px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 60px;
+  color: #808080;
+  border: none;
+  background: none;
+}
+.headerBottom .allCategoriesBox select:focus {
+  outline: none;
+}
+.headerBottom .mainNav {
+  display: flex;
+  align-items: center;
+}
+.headerBottom .mainNav a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #666666;
+  text-decoration: none;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.headerBottom .mainNav a:hover {
+  text-decoration: underline;
+}
+.headerBottom .settings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.headerBottom .settings .menuDropdown {
+  /* Border */
+  border-left: 2px solid #f5f5f5;
+  padding: 20px 24px;
+}
+.headerBottom .settings .menuDropdown p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #b3b3b3;
+}

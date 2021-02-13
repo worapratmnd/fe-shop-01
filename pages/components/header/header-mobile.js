@@ -5,7 +5,6 @@ import SideDrawer from "./side-drawer";
 
 export default function HeaderMobile({viewer}) {
     const [isDrawerOpen, setToggleDrawerOpen] = useState(false)
-
     const togleDrawer = () => {
         setToggleDrawerOpen(!isDrawerOpen)
     }

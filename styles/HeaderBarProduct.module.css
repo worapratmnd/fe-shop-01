@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+.header .sortList {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header .sortList a {
+  box-sizing: border-box;
+  margin-left: 35px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  color: #b3b3b3;
+}
+.header .sortList a.active {
+  color: #1875f0;
+  border-bottom: 2px solid #1875f0;
+}
+.header .sortList a:hover {
+  cursor: pointer;
+}
+@media (max-width: 850px) {
+  .header {
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .sortList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .header .sortList a {
+    font-size: 12px;
+    margin-left: 0px;
+  }
+}
